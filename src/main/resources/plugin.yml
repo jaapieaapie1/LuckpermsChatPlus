@@ -1,0 +1,16 @@
+name: LuckpermsChatPlus
+version: '${version}'
+main: nl.jaapie.luckpermschatplus.LuckpermsChatPlus
+api-version: '1.20'
+depend:
+  - LuckPerms
+libraries:
+  - com.electronwill.night-config:toml:3.6.0
+  - org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.0
+commands:
+  lpcp:
+    description: 'Main command for LuckpermsChatPlus'
+    usage: '/lpcp reload'
+    permission: 'lpcp.reload'
+    aliases:
+      - luckpermschatplus

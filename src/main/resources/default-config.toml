@@ -1,0 +1,29 @@
+# For colors and other formatting options see: https://docs.advntr.dev/minimessage/format.html
+#
+# Placeholders:
+# {message} - the chat message
+# {name} - the player's name
+# {displayname} - the player's display name / nickname
+# {world} - the world name of the player's current world
+# {prefix} - the player's highest priority prefix
+# {suffix} - the player's highest priority suffix
+# {prefixes} - the player's prefixes sorted by the highest priority
+# {suffixes} - the player's suffixes sorted by the highest priority
+# {username-color} - the player's or the group's username color
+# {message-color} - the player's or the group's message color
+#
+# You can use /lpcp reload to reload the plugin and apply changes to the config file.
+
+# Keeping this true will allow you to use legacy color codes (e.g. &a) in the chat format.
+# This however does impact performance, because it needs to parse the message twice.
+# We recommend that you use the MiniMessage format instead.
+parse-legacy-color-codes = true
+
+chat-format = "{prefix}{name}<reset>: {message}"
+
+# Set formats per group (commented out by default)
+[group-formats]
+#default = "<gray>[default]</gray> {name}<reset>: {message}"
+#admin = "<red>[admin]</red> {name}<reset>: {message}"
+
+# Massive credits to LPC (https://github.com/wikmor/LPC) for the original plugin and the idea.
